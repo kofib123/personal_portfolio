@@ -51,7 +51,7 @@ app.get("/", (req, res) => {
 
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-console.log(process.env.SENDGRID_API_KEY);
+
 const sendEmailNotification = (formData) => {
   const msg = {
     to: 'boateng.kofi123@gmail.com',
@@ -81,6 +81,7 @@ async function storeForm(formData) {
         await client.close();
     }
 }
+
 app.post("/submitted", (req, res) => {
     const formData = req.body;
     sendEmailNotification(formData);

@@ -15,6 +15,11 @@ body
 	font-weight: 400;
 }
 
+body p {
+
+    font-size: 16px;
+}
+
 /* start all section */
 #home,
 #home .fp-slide,
@@ -36,6 +41,10 @@ body
 #portfolio .fp-slide,
 #portfolio .fp-tableCell,
 
+
+#footer {
+    font-size: 8px;
+}
 footer,
 footer .fp-slide,
 footer .fp-tableCell
@@ -59,6 +68,7 @@ h1,h2,h3,h4,h5
         padding-top: 100px;
         padding-bottom: 120px;
     }
+
 /* end all section */
 
 /* start simpletextrotator */
